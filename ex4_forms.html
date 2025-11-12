@@ -4,39 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
 </head>
 
-<body>
-    <h1>Heaviest Birds</h1>
-    <table>
-        <thead>
-            <tr>
-                <th rowspan="2">Animal</th>
-                <th colspan="2">Average Mass</th>
-                <th rowspan="2">Can fly?</th>
-            </tr>
-            <tr>
-                <th>KG</th>
-                <th>LB</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ostrich</td>
-                <td>104 kg</td>
-                <td>230 lb</td>
-                <td>No</td>
-            </tr>
+<!-- the <form> is only a shell for a collection of inputs, buttons, etc. -->
 
-            <tr>
-                <td>Somali Ostrich</td>
-                <td>90 kg</td>
-                <td>200 lb</td>
-                <td>No</td>
-            </tr>
-        </tbody>
-    </table>
+<body>
+    <h1>Forms</h1>
+
+    <form action="/tacos">
+        <!-- label represents a caption for an item in a user interface -->
+        <p>
+            <label for="username">Enter a username:</label>
+            <input type="text" placeholder="Username" id="username">
+        </p>
+        <p>
+            <label for="password">Enter a password:</label>
+            <input type="password" placeholder="Password" id="password">
+        </p>
+        <p>
+            <label for="color">Choose a color:</label>
+            <input type="color" id="color">
+        </p>
+        <input type="month">
+        <input type="checkbox">
+        <input type="range">
+        <p>
+            <button>Submit</button>
+            <button type="button">Do not submit</button>
+            <input type="submit" value="Also Submit">
+        </p>
+    </form>
+
 </body>
 
 </html>
