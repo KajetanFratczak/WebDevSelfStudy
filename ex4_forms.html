@@ -14,19 +14,20 @@
 
     <form action="/tacos">
         <!-- label represents a caption for an item in a user interface -->
+        <!-- name attribute: "Name of the form control. Submitted with the form as part of a name/value pair" -->
         <p>
             <label for="username">Enter a username:</label>
-            <input type="text" placeholder="Username" id="username">
+            <input type="text" placeholder="Username" id="username" name="username">
         </p>
         <p>
             <label for="password">Enter a password:</label>
-            <input type="password" placeholder="Password" id="password">
+            <input type="password" placeholder="Password" id="password" name="password">
         </p>
         <p>
             <label for="color">Choose a color:</label>
-            <input type="color" id="color">
+            <input type="color" id="color" name="color">
         </p>
-        <input type="month">
+        <input type="month" name="month">
         <input type="checkbox">
         <input type="range">
         <p>
